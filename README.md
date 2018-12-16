@@ -7,12 +7,13 @@ A library to annotate social feed with topic. Topics can be used to filter out u
 The code uses a set of pre-determined Topics and a few seed words for each topic.
 
 
-###Features
+### Features
 - Support pulling large scala data from Twitter
 - Support to build and fit custom data to create a GuidedLDA model
 - Support to use the above created model to annotate any given text
 - Pull latest `n` posts from Twitter, and add topic to each post
 
+-----
 ### Installing
 Library is based off [GuidedLDA](http://github.com/vi3k6i5/GuidedLDA "GuidedLDA"). These are the packages needed to be installed.
 
@@ -29,6 +30,7 @@ Twitter credentails need to be set to environment variables.
 
 > For setting up Twitter app follow [Twitter API](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html "Twitter API")
 
+-------
 ## Documentation
 Library supports 4 major funtionalities.
 1. Download twitter posts for a given set of hashtags. Convert the data to LDAC format which could be used to create a DTM and hence used for fitting to LDA model.
@@ -104,12 +106,11 @@ Downlaodes latest 20 posts from the user's twitter feed and adds topic to them.
 
 See the magic for yourself! 
 > You must have your Twitter API credentials in the environment.
+-------
 
 ### Credits
--------
 I would like to sincerely thank my mentor and TA `Bhavya` for guiding me towards GuidedLDA (pun intended!). There were several road blocks in the project and she did help me navigate through it. 
 Ofcourse credit to Prof. Zhai for the excelent course on Information Retrieval which inspired and gave me the theoritical understanding to solve this problem.
 
 ### License
--------
 The library is licensed under Version 2.0 of the Mozilla Public License.
