@@ -8,7 +8,8 @@ Created on Sat Dec  1 16:27:00 2018
 import os
 import guidedlda.utils
 import time
-from six.moves import cPickle as pickle
+#from six.moves import cPickle as pickle
+import pickle
 import numpy as np
 import guidedlda
 
@@ -20,10 +21,9 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 import string
 import re
-import enchant
 
 #Global
-HOME = '/Users/vkumar/MCS/CS410/Project/'
+HOME = './'
 TOPIC_INDEX = {0: 'Sports', 1: 'Business', 2: 'Arts/Litrature', 3: 'Politics', 4: 'Misc'}
 
 #Twitter App keys and secrets must be present as environment variables.
