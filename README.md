@@ -105,11 +105,11 @@ Downlaodes latest 20 posts from the user's twitter feed and adds topic to them.
 See the magic for yourself! 
 > You must have your Twitter API credentials in the environment.
 
-###Credits
+### Credits
 -------
 I would like to sincerely thank my mentor and TA `Bhavya` for guiding me towards GuidedLDA (pun intended!). There were several road blocks in the project and she did help me navigate through it. 
 Ofcourse credit to Prof. Zhai for the excelent course on Information Retrieval which inspired and gave me the theoritical understanding to solve this problem.
 
-###License
+### License
 -------
 The library is licensed under Version 2.0 of the Mozilla Public License.
