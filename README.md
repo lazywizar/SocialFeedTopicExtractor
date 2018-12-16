@@ -108,7 +108,7 @@ See the magic for yourself!
 
 
 ### Credits
-I would like to sincerely thank my mentor and TA `Bhavya <bhavya2@illinois.edu>` for guiding me towards GuidedLDA (pun intended!). There were several road blocks in the project and she did help me navigate through it. 
+I would like to sincerely thank my mentor and TA [Bhavya](mail://bhavya2@illinois.edu "Bhavya") for guiding me towards GuidedLDA (pun intended!). There were several road blocks in the project and she did help me navigate through it. 
 Ofcourse credit to Prof. Zhai for the excelent course on Information Retrieval which inspired and gave me the theoritical understanding to solve this problem.
 
 ### License
