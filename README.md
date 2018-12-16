@@ -13,7 +13,6 @@ The code uses a set of pre-determined Topics and a few seed words for each topic
 - Support to use the above created model to annotate any given text
 - Pull latest `n` posts from Twitter, and add topic to each post
 
------
 ### Installing
 Library is based off [GuidedLDA](http://github.com/vi3k6i5/GuidedLDA "GuidedLDA"). These are the packages needed to be installed.
 
@@ -23,6 +22,7 @@ Library is based off [GuidedLDA](http://github.com/vi3k6i5/GuidedLDA "GuidedLDA"
     $ pip install python-twitter
 
 Twitter credentails need to be set to environment variables.
+
     $ export CONSUMER_KEY=<>
     $ export CONSUMER_SECRET=<>
     $ export ACCESS_TOKEN_KEY=<>
@@ -30,7 +30,6 @@ Twitter credentails need to be set to environment variables.
 
 > For setting up Twitter app follow [Twitter API](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html "Twitter API")
 
--------
 ## Documentation
 Library supports 4 major funtionalities.
 1. Download twitter posts for a given set of hashtags. Convert the data to LDAC format which could be used to create a DTM and hence used for fitting to LDA model.
@@ -40,7 +39,7 @@ Library supports 4 major funtionalities.
 
  >  \#4 is what would be most useful for any Twitter client. The output contains topic, twitter_feed_id and text of the post. Client can use the id and topic to select which posts to show and which to omit.
 
-###Quick Start
+### Quick Start
 There are two main command line options `--mode` or `-m` and `-i` or `--inputfile`
 
 Supported modes are:
@@ -54,7 +53,7 @@ The code uses the following default topics and a few seed words for each topic.
 `{0: 'Sports', 1: 'Business', 2: 'Arts/Litrature', 3: 'Politics', 4: 'Misc'}` This can be easily changed by the clients as desired.
 
 
-#####1. Train a default model using NYT (New York Times) dataset.
+##### 1. Train a default model using NYT (New York Times) dataset.
 ` $ python3 SocialTopicExtractor.py -m Train`
 
     Preparing a model by fitting NYT dataset from guidedLDA
@@ -77,7 +76,7 @@ The code uses the following default topics and a few seed words for each topic.
     Topic [Misc]: place city home area building small live school house old
 
 
-#####2. Annotate already download feed file with topics
+##### 2. Annotate already download feed file with topics
 `tw_latest_raw.txt` is a sample feed file included in the library which can be used to test. There should be one post per line.
 `python3 SocialTopicExtractor.py -m TestOffline -i tw_latest_raw.txt`
 
@@ -99,14 +98,14 @@ The code uses the following default topics and a few seed words for each topic.
     Top topic: Business [Post: '1069481367388471296 In a major breakthrough, Gujarat police arrests three persons, including two BJP workers, for their alleged involve… https://t.co/U9Hk1ksgoO']
     ....
 
-#####3. Download latest feed from Twitter and annotate each post with the top topic.
+##### 3. Download latest feed from Twitter and annotate each post with the top topic.
 Downlaodes latest 20 posts from the user's twitter feed and adds topic to them.
 
 `python3 SocialTopicExtractor.py -m TestOnline`
 
 See the magic for yourself! 
 > You must have your Twitter API credentials in the environment.
--------
+
 
 ### Credits
 I would like to sincerely thank my mentor and TA `Bhavya` for guiding me towards GuidedLDA (pun intended!). There were several road blocks in the project and she did help me navigate through it. 
